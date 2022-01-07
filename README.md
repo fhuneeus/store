@@ -1,10 +1,34 @@
-# Getting Started with Create React App
+# Using the app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In order to use the app simply go to https://elated-heisenberg-0507ef.netlify.app/ and try from there.
 
-## Available Scripts
+You can use the first input to enter a description for an incident you want to create in the store.
+Then set a start date and an end date for that incident. Create it by pressing the create incident.
 
-In the project directory, you can run:
+After this, you can do a query and check for open and closed incidents, maximum completion time and average completion time for the incidents between a range of two defined dates.
+
+To define the start date and end date select the calendar pickers just below number 3.
+After that click on "Check for open, closed cases, average and maximum completion time".
+
+After that you can see a summary of the result of your query.
+
+Dates being checked are between - and -
+Number of open cases
+Number of closed cases
+
+Average solution time for closed cases
+Maximum solution time for closed cases
+
+## Testing with Cypress 
+
+To test with Cypress, you have to clone the repo to your computer, and then go to the root folder and use two separate terminals.
+On one terminal run "npm run start"
+
+And on the other one, having installed cypress in your computer (if you do not have it installed type in the command npm install cypress --save-dev).
+Having cypress installed, type in npx cypress open.
+
+After this you will see a list of tests. Scroll down to the last options and click on store.js
+This should run the end to end tests programmed to check if the App is working properly.
 
 ### `npm start`
 
@@ -14,10 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
