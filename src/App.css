@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+}
+
+p,
+label,
+input,
+#description {
+  text-align: left;
+}
+
+#description {
+  width: 74%;
+}
+
+label,
+#description {
+  display: flex;
+}
+
+#completeContent {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
